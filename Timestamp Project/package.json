@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "api and microservice related project",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "repository": "git@github.com:Mohammad-Mesbaul-Haque/API-and-Microservice-Projects.git",
   "author": "Mohammad Mesbaul Haque <mesbaul333@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
