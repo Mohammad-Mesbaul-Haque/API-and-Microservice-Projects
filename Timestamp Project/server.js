@@ -17,7 +17,17 @@ const app = express()
      res.json({"ok" : "yes!"})
  })
  
- 
+ // project's main endpoint
+ let responseObject = {}
+ app.get('/api/timestamp/:input', (req, res)=>{
+     let input = req.params.input;
+
+     if (input.includes('-')) {
+         responseObject.unix = new Date(input).getTime();
+     }
+
+     res.json(responseObject);
+ })
 
  // listening server
  app.listen(3000, ()=>{
