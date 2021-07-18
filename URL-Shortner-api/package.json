@@ -1,0 +1,12 @@
+{
+  "name": "URL-Shortner-api",
+  "version": "1.0.0",
+  "description": "url shortner api",
+  "main": "server.js",
+"scripts": {
+"start": "nodemon server.js"},
+  "repository": "https://github.com/Mohammad-Mesbaul-Haque/API-and-Microservice-Projects.git",
+  "author": "Mohammad Mesbaul Haque",
+  "license": "MIT",
+  "private": false
+}
