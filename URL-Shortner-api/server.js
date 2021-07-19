@@ -66,6 +66,18 @@ app.post('/api/shorturl/new', (req, res)=>{
 
 })
 
+// get and redirect url
+app.get('/api/shorturl/:id', (req, res)=>{
+    const id = req.params.id;
+    Url.findById(id, (err, data)=>{
+        if (!data) {
+            res.json({error: "invalid URL"})
+        } else {
+            res.redirect(data.url);
+        }
+    })
+})
+
 
 
 app.listen(process.env.PORT, ()=>{
